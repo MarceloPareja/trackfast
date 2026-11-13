@@ -1,5 +1,6 @@
-# trackfast
-# Estructura de Carpetas
+# Trackfast
+
+## Estructura de Carpetas
 labprest/
 ├── README.md
 ├── CONTRIBUTING.md
