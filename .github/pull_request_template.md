@@ -7,7 +7,7 @@
 <!-- Qué archivos mirar primero, cómo probarlo -->
 
 ## Lista de verificación
--[ ] La rama sigue la convención tipo/número-descripción
+- [ ] La rama sigue la convención tipo/número-descripción
 <!--
 Implementación:
     feat/num-desc(max 30 chars), 
@@ -25,7 +25,7 @@ Fixes:
 Refactor:
     refact/num-desc(max 30 chars)
 -->
--[ ] Los commits siguen la convención (docs:, feat:, fix:...)
+- [ ] Los commits siguen la convención (docs:, feat:, fix:...)
 <!--
 Implementación:
     feat(Servicio-Modulo):num-desc(max 60 chars) 
@@ -43,9 +43,9 @@ Fixes:
 Refactor:
     refact(Servicio-Modulo):num-desc(max 60 chars) 
 -->
--[ ] Se actualizó la documentación afectada
+- [ ] Se actualizó la documentación afectada
 <!--Desde la semana 5-->
--[ ] Las pruebas pasan
+- [ ] Las pruebas pasan
 
 ## Criterios de aceptación
 <!--Esto no se colocaen el PR solo se denomina para conocimiento general-->
@@ -56,3 +56,20 @@ Refactor:
 | 3 | Cumplido en el tiempo establecido |
 | 4 | No existen ambigüedades en los entregables que puedan ser confusos tanto para el equipo como para el cliente |
 | 5 | No existen cambios a realizar o funciones incompletas, que estén establecidas en la planificación y aún no se desarrollan en esta fase. |
+# Plantilla sin comentarios extensos
+## Qué cambia
+<!-- Describan en 2 o 3 líneas qué agrega o corrige este PR -->
+
+## Por qué Closes #
+
+## Cómo revisarlo
+<!-- Qué archivos mirar primero, cómo probarlo -->
+
+## Lista de verificación
+- [ ] La rama sigue la convención tipo/número-descripción
+
+- [ ] Los commits siguen la convención (docs:, feat:, fix:...)
+
+- [ ] Se actualizó la documentación afectada
+<!--Desde la semana 5-->
+- [ ] Las pruebas pasan
