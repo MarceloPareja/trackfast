@@ -39,21 +39,30 @@ Revisar el archivo de reglas de contribución [CONTRIBUTING.md ](CONTRIBUTING.md
 
 ## Estructura de Carpetas
 ```
-labprest/
+trackfast/
 ├── README.md
 ├── CONTRIBUTING.md
 ├── .gitignore
 ├── .github/
-│	├── pull_request_template.md
-│	└── ISSUE_TEMPLATE/
-│	├── historia.md
-│	└── defecto.md
+│   ├── pull_request_template.md
+│   └── ISSUE_TEMPLATE/
+│       ├── historia.md
+│       ├── defecto.md
+│       └── caso_de_prueba.md
 └── docs/
-├── 01-inicio/
-├── 02-requisitos/
-├── 03-modelado/
-└── proceso/
+    ├── 01-inicio/           # Acta, matriz, riesgos y plan de construcción
+    ├── 02-requisitos/       # Requisitos, historias y backlog
+    ├── 03-modelado/         # Casos de uso, diagramas editables (.drawio, .puml) y arquitectura
+    └── proceso/             # PROCESO.md y actas de retrospectiva
 ```
+
+## Modelado y Casos de Uso
+La documentación y diagramas de modelado del sistema se encuentran detallados en [docs/03-modelado/](docs/03-modelado/README.md):
+* **Especificación formal:** [Casos_De_Uso.pdf](docs/03-modelado/Casos_De_Uso.pdf)
+* **Diagrama editable Draw.io / diagrams.net:** [Casos_De_Uso_Editable.drawio](docs/03-modelado/Casos_De_Uso_Editable.drawio)
+* **Diagrama editable PlantUML:** [casos_de_uso.puml](docs/03-modelado/casos_de_uso.puml)
+* **Diagrama exportado:** [Diagrama_Casos_De_Uso_General.pdf](docs/03-modelado/Diagrama_Casos_De_Uso_General.pdf)
+* **Detalle de casos de uso y matriz de trazabilidad:** [README de Modelado](docs/03-modelado/README.md)
 
 ## Descripción de la Arquitectura
 
