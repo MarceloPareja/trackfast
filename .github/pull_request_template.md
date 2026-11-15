@@ -1,7 +1,7 @@
 ## Qué cambia
 <!-- Describan en 2 o 3 líneas qué agrega o corrige este PR -->
 
-## Por qué Closes #
+## Por qué #
 
 ## Cómo revisarlo
 <!-- Qué archivos mirar primero, cómo probarlo -->
