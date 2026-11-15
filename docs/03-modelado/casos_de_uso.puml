@@ -1,0 +1,112 @@
+@startuml Diagrama_Casos_De_Uso_General
+!theme plain
+skinparam shadowing false
+skinparam handwritten false
+skinparam monochrome false
+skinparam packageStyle rectangle
+skinparam roundcorner 10
+skinparam actorStyle awesome
+
+skinparam actor {
+    BackgroundColor #F8F9FA
+    BorderColor #2B2D42
+    FontColor #2B2D42
+    FontSize 12
+    FontStyle bold
+}
+
+skinparam usecase {
+    BackgroundColor #E8F4FD
+    BorderColor #2B6CB0
+    FontColor #1A365D
+    FontSize 12
+    ArrowColor #2B6CB0
+}
+
+left to right direction
+
+' ========================================================
+' ACTORES
+' ========================================================
+actor "Supervisor /\nAdministrador" as Admin
+actor "Repartidor" as Repartidor
+actor "Cliente" as Cliente
+actor "Sistema GPS\nde móvil" as GPS <<Secondary>>
+
+' ========================================================
+' FRONTERA DEL SISTEMA
+' ========================================================
+rectangle "Sistema Trackfast" {
+    
+    ' Casos de uso de autenticación y administración
+    usecase "CU01 Iniciar Sesión" as CU01
+    usecase "CU02 Gestionar información\nde repartidores" as CU02
+    usecase "CU03 Gestionar Información\nde Clientes" as CU03
+    usecase "CU04 Gestionar información\nde paquetes (v1.1)" as CU04
+    usecase "CU05 Gestionar entregas" as CU05
+    
+    ' Monitoreo y rastreo
+    usecase "CU07 Monitorear progreso de\nentregas en tiempo real" as CU07
+    usecase "CU12 Verificar Posición\nRepartidor" as CU12
+    usecase "CU13 Recibir notificaciones\nde incidencias" as CU13
+    usecase "CU14 Observar estado en\ntiempo real de paquetes" as CU14
+    
+    ' Operaciones del Repartidor
+    usecase "CU08 Gestionar lista\nde entregas" as CU08
+    usecase "CU09 Actualizar estados\nde paquetes" as CU09
+    usecase "CU10 Reportar incidencias\nen el trayecto" as CU10
+    
+    ' Entrega y Verificación
+    usecase "CU11 Confirmar entrega" as CU11
+    usecase "CU15 Gestionar código de\nverificación" as CU15
+
+    ' ----------------------------------------------------
+    ' ASOCIACIONES DE ACTORES
+    ' ----------------------------------------------------
+    ' Supervisor / Administrador
+    Admin -- CU01
+    Admin -- CU02
+    Admin -- CU03
+    Admin -- CU04
+    Admin -- CU05
+    Admin -- CU07
+
+    ' Repartidor
+    Repartidor -- CU01
+    Repartidor -- CU08
+    Repartidor -- CU09
+    Repartidor -- CU10
+    Repartidor -- CU11
+
+    ' Cliente
+    Cliente -- CU07
+    Cliente -- CU11
+
+    ' Sistema GPS (Secundario)
+    GPS -- CU12
+
+    ' ----------------------------------------------------
+    ' RELACIONES INCLUDE Y EXTEND
+    ' ----------------------------------------------------
+    ' CU15 extiende a CU03 cuando el paquete sale de bodega
+    CU03 <.. CU15 : <<extend>>
+
+    ' CU07 incluye CU12 para consultar coordenadas GPS
+    CU07 ..> CU12 : <<include>>
+
+    ' CU13 extiende a CU07 cuando ocurre un percance en ruta
+    CU07 <.. CU13 : <<extend>>
+
+    ' CU05 incluye CU14 para observar cambios de estado
+    CU05 ..> CU14 : <<include>>
+}
+
+legend right
+  | Relación | Descripción |
+  | <<include>> | Invocación obligatoria durante el flujo |
+  | <<extend>>  | Comportamiento opcional / condicional |
+  | Actores primarios | Supervisor, Repartidor, Cliente |
+  | Actor secundario  | Sistema GPS de móvil |
+endlegend
+
+@enduml
