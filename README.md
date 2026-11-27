@@ -75,7 +75,7 @@ Toda la comunicación desde los clientes (Móvil y Web) pasa a través de un **A
 | Kotlin | React.js | C# | .NET | Docker |Kubernetes | PostgreSQL | MongoDB |
 | - | - | - | - | - | - | - | - |
 
-<style>
+<!-- <style>
   .fila-flex {
     display: flex;
     gap: 10px;
@@ -89,21 +89,18 @@ Toda la comunicación desde los clientes (Móvil y Web) pasa a través de un **A
     object-fit: contain;
     border-radius: 6px;
   }
-</style>
+</style> -->
 
-<div align="center">
-    <div class="fila-flex">
-    <img src="https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/webp/kotlin.webp" width="100" height="100" alt="Kotlin">
-    <img src="https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/webp/reactjs.webp" width="100" height="100" alt="React JS">
-    <img src="https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/webp/csharp.webp" width="100" height="100" alt="C#">
-    <img src="https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/webp/dotnet.webp" width="100" height="100" alt="C#">
-    <img src="https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/webp/docker.webp" width="100" height="100" alt="Kubernetes">
-    <img src="https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/webp/kubernetes.webp" width="100" height="100" alt="Kubernetes">
-    <img src="https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/webp/postgresql.webp" width="100" height="100" alt="PostgreSQL">
-    <img src="https://images.icon-icons.com/2415/PNG/512/mongodb_original_logo_icon_146424.png" width="100" height="100" alt="MongoDB">
-    </div>
-</div>
-
+<p align="center">
+  <img src="https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/webp/kotlin.webp" width="80" height="80" alt="Kotlin">  
+  <img src="https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/webp/reactjs.webp" width="80" height="80" alt="React JS">  
+  <img src="https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/webp/csharp.webp" width="80" height="80" alt="C#">  
+  <img src="https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/webp/dotnet.webp" width="80" height="80" alt=".NET">  
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" width="80" height="80" alt="Docker">  
+  <img src="https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/webp/kubernetes.webp" width="80" height="80" alt="Kubernetes">  
+  <img src="https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/webp/postgresql.webp" width="80" height="80" alt="PostgreSQL">  
+  <img src="https://images.icon-icons.com/2415/PNG/512/mongodb_original_logo_icon_146424.png" width="80" height="80" alt="MongoDB">
+</p>
 ## Ecosistema de Microservicios
 
 El núcleo del sistema está compuesto por los siguientes servicios independientes:
